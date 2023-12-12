@@ -2,8 +2,7 @@
 
 ## Factory UML Diagram 
                 !(https://github.com/sonambharti/Design-Patterns-in-Python/blob/main/factory/Factory%20UML%20Diagram.png)
-
-
+                
 # Example to show Concept of Factory Design Pattern
 
 ## Command:

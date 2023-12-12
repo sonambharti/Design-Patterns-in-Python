@@ -7,7 +7,7 @@
 
 ## Output:
 ```
-python ./factory/factory_concept.py
+python3 ./factory/factory_concept.py
 ConcreteProductB
 ```
 
@@ -16,6 +16,6 @@ ConcreteProductB
 
 ## Output:
 ```
-python ./factory/client.py 
+python3 ./factory/client.py 
 {'radius': 5, 'height': 50}
 ```

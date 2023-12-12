@@ -1,7 +1,7 @@
 # Factory Design Pattern
 
 ## Factory UML Diagram 
-                ![](<Factory UML Diagram.png>)
+                !(https://github.com/sonambharti/Design-Patterns-in-Python/blob/main/factory/Factory%20UML%20Diagram.png))
 
 
 # Example to show Concept of Factory Design Pattern
@@ -16,5 +16,7 @@ ConcreteProductB
 # Overview to run the code to design a Bottle Factory
 
 ## Commands:
-`python ./factory/client.py 
-{'radius': 5, 'height': 50}`
+```
+python ./factory/client.py 
+{'radius': 5, 'height': 50}
+```

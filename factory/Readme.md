@@ -7,11 +7,9 @@
 # Example to show Concept of Factory Design Pattern
 
 ## Commands:
-`python ./factory/factory_concept.py`
-`ConcreteProductB`
+`python ./factory/factory_concept.py \nConcreteProductB`
 
 # Overview to run the code to design a Bottle Factory
 
 ## Commands:
-`python ./factory/client.py`
-`{'radius': 5, 'height': 50}`
+`python ./factory/client.py \n{'radius': 5, 'height': 50}`

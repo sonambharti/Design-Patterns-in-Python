@@ -13,7 +13,7 @@ python3 ./abstract_factory/abstract_factory_concept_ex/abstract_factory_concept.
 <class 'factory_b.ConcreteProductC'>
 ```
 
-# Overview to run the code to design a Bottle Factory
+# Overview to run the code to design a Beverages Factory
 
 ## Output:
 ```

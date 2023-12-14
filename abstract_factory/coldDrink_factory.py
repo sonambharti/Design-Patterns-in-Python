@@ -8,7 +8,7 @@ class ColdDrinkFactory:  # pylint: disable=too-few-public-methods
     "The Factory Class"
 
     @staticmethod
-    def get_volumes(coldDrink):
+    def get_coldDrinks(coldDrink):
         "A static method to get a chair"
         try:
             if coldDrink == 'LargeColdDrink':

@@ -8,7 +8,7 @@ class JuiceFactory:  # pylint: disable=too-few-public-methods
     "The Factory Class"
 
     @staticmethod
-    def get_volumes(Juice):
+    def get_juices(Juice):
         "A static method to get a chair"
         try:
             if Juice == 'LargeJuice':

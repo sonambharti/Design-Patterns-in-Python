@@ -13,9 +13,9 @@ class BeveragesFactory(IBeveragesFactory):
         "Static get_factory method"
         try:
             if drink in ['SmallColdDrink', 'MediumColdDrink', 'BigColdDrink']:
-                return ColdDrinkFactory.get_volumes(drink)
+                return ColdDrinkFactory.get_coldDrinks(drink)
             if drink in ['SmallJuice', 'MediumJuice', 'BigJuice']:
-                return JuiceFactory.get_volumes(drink)
+                return JuiceFactory.get_juices(drink)
             raise Exception('No Factory Found')
         except Exception as _e:
             print(_e)

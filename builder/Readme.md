@@ -12,12 +12,19 @@ python3 ./builder/builder_concept.py
 ```
 
 
-# Overview to run the code to design a Bottle Factory
-
+# Overview to run the code to design a House type and its prices
 ## Output:
 ```
 python3 ./builder/client.py 
 This is a Ice Igloo with 1 door(s) and 0 window(s).
+
+The charges for Igloo is 4500 per room per night.
+
 This is a Sandstone Castle with 100 door(s) and 200 window(s).
+
+The charges for Castle is 5500 per room per night.
+
 This is a Wood House Boat with 6 door(s) and 8 window(s).
+
+The charges for House Boat is 7500 per room per night.
 ```

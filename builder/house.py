@@ -16,6 +16,14 @@ class House():  # pylint: disable=too-few-public-methods
 
     def construction(self):
         "Returns a string describing the construction"
-        return f"This is a {self.wall_material} "\
+        print(f"\nThis is a {self.wall_material} "\
             f"{self.building_type} with {self.doors} "\
-            f"door(s) and {self.windows} window(s)."
+            f"door(s) and {self.windows} window(s).\n")
+        price = 0
+        if(self.building_type == "Igloo"):
+            price = 4500
+        elif(self.building_type == "Castle"):
+            price = 5500
+        if(self.building_type == "House Boat"):
+            price = 7500
+        return f"The charges for {self.building_type} is {price} per room per night."

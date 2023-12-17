@@ -1,7 +1,7 @@
 # Abstract Factory Design Pattern
 
 ## Abstract Factory UML Diagram 
-                !(<Abstract Factory UML diagram.png>)
+                !(Abstract Factory UML diagram.png)
 
 
 # Example to show Concept of Abstract Factory Design Pattern

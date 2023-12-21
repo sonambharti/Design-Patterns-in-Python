@@ -3,7 +3,7 @@
 ## Singleton UML Diagram 
                 ![Singleton Design Pattern](Singleton.png)
                 
-# Type of Houses Example to show Concept of Prototype Design Pattern
+# Example to show Concept of Singleton Design Pattern
 
 ## Output:
 ```
@@ -15,10 +15,10 @@ id(OBJECT1)     = 5190809136
 ```
 
 
-# Overview to run the code to design a House type and its prices
+# Overview to run the code to design a Leaderboard of Games
 ## Output:
 ```
-python3 ./prototype/client.py 
+python3 ./singleton/client.py 
 -----------Leaderboard-----------
 |       1       |       Mridula |
 |       2       |       Satyam  |

@@ -3,7 +3,7 @@
 ## Prototype UML Diagram 
                 ![Prototype Design Pattern](<Prototype Design Pattern.png>)
                 
-# Type of Houses Example to show Concept of Prototype Design Pattern
+# Example to show Concept of Prototype Design Pattern
 
 ## Output:
 ```
@@ -14,7 +14,7 @@ OBJECT1 4303700192      field=[1, 101, 3, 4]    type=<class 'list'>
 ```
 
 
-# Overview to run the code to design a House type and its prices
+# Overview to run the code to design a program to handle the cloning function of a document...
 ## Output:
 ```
 python3 ./prototype/client.py 

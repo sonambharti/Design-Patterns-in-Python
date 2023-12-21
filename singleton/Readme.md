@@ -36,3 +36,5 @@ python3 ./prototype/client.py
 
 
 ```
+
+Here, leaderboard has single instance. So, there is one dictionary (_table) which is updated each time called. In result the table has same values. This is an example of Singleton Design Pattern.

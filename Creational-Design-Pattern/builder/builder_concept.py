@@ -3,7 +3,6 @@
 "Builder Concept Sample Code"
 from abc import ABCMeta, abstractmethod
 
-
 class IBuilder(metaclass=ABCMeta):
     "The Builder Interface"
 

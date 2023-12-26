@@ -3,7 +3,7 @@
 ## Decorator UML Diagram 
                 ![Decorator Design Pattern](decorator.png)
                 
-# Example to show Concept of Singleton Design Pattern
+# Example to show Concept of Decorator Design Pattern
 
 ## Output:
 ```
@@ -13,7 +13,7 @@ Decorator Method(Component Method)
 ```
 
 
-# Overview to run the code to design a Leaderboard of Games
+# Overview to run the code to design a Decorator Use Case
 ## Output:
 ```
 python3 ./decorator/client.py 

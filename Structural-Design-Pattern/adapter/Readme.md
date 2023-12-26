@@ -4,6 +4,10 @@ You may have two classes that are similar, but they have different method signat
 
 The Adapter is used when you have an existing interface that doesn't directly map to an interface that the client requires. So, then you create the Adapter that has a similar functional role, but with a new compatible interface.
 
+The Adapter design pattern solves these problems:
+• How can a class be reused that does not have an interface that a client requires? • How can classes that have incompatible interfaces work together?
+• How can an alternative interface be provided for a class?
+
 Terminology:
 • Target: The domain specific interface or class that needs to be adapted.
 • Adapter Interface: The interface of the target that the adapter will need to implement. • Adapter: The concrete adapter class containing the adaption process.

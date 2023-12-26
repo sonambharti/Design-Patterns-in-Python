@@ -1,7 +1,17 @@
 # Decorator Design Pattern
 
+The decorator pattern adds extensibility without modifying the original object.
+The decorator forwards requests to the enclosed object and can perform extra actions.
+
+Terminology:
+i.    Component: The object that may be decorated.
+ii.   Component Interface: An interface for objects.
+iii.  Decorator: The class that applies the extra responsibilities to the component being decorated. It also implements the same component interface.
+
 ## Decorator UML Diagram 
                 ![Decorator Design Pattern](decorator.png)
+
+                
                 
 # Example to show Concept of Decorator Design Pattern
 

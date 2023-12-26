@@ -1,5 +1,13 @@
 # Prototype Design Pattern
 
+The Prototype design pattern is good for when creating new objects requires more resources than you want to use or have available. You can save resources by just creating a copy of any existing object that is already in memory.
+E.g., A file you've downloaded from a server may be large, but since it is already in memory, you could just clone it, and work on the new copy independently of the original.
+
+Terminology:
+i.    Prototype Interface: The interface that describes the clone() method. 
+ii.   Prototype: The Object/Product that implements the Prototype interface.
+iii.  Client: The client application that uses and creates the ProtoType.
+
 ## Prototype UML Diagram 
                 ![Prototype Design Pattern](<Prototype Design Pattern.png>)
                 

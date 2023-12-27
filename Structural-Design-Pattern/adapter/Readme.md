@@ -13,7 +13,7 @@ Terminology:
 • Adapter Interface: The interface of the target that the adapter will need to implement. • Adapter: The concrete adapter class containing the adaption process.
 • Client: The client application that will use the Adapter.
 
-## DecoraAdaptertor UML Diagram 
+## Adaptertor UML Diagram 
                 ![Adapter Design Pattern](adapter.png)
                 
 # Example to show Concept of Adapter Design Pattern

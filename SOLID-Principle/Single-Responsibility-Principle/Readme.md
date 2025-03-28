@@ -5,6 +5,7 @@
 - This means that a class should have only one job or responsibility.
 - This principle is used to make the code more maintainable and easier to understand.
 - It is also known as the **Single Job Principle**.
+- It is introduced by **Robert C. Martin**.
 
 
 **Note:**

@@ -1,68 +1,34 @@
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
 
-class Machine:
-    def print(self, document):
-        raise NotImplementedError()
-
-    def fax(self, document):
-        raise NotImplementedError()
-
-    def scan(self, document):
-        raise NotImplementedError()
-
-
-# ok if you need a multifunction device
-class MultiFunctionPrinter(Machine):
-    def print(self, document):
-        pass
-
-    def fax(self, document):
-        pass
-
-    def scan(self, document):
-        pass
-
-
-class OldFashionedPrinter(Machine):
-    def print(self, document):
-        # ok - print stuff
-        pass
-
-    def fax(self, document):
-        pass  # do-nothing
-
-    def scan(self, document):
-        """Not supported!"""
-        raise NotImplementedError('Printer cannot scan!')
-
-
-class Printer:
+# Interface 1: Printer
+class Printer(ABC):
     @abstractmethod
-    def print(self, document): pass
+    def print(self, document):
+        pass
 
 
-class Scanner:
+# Interface 2: Scanner
+class Scanner(ABC):
     @abstractmethod
-    def scan(self, document): pass
+    def scan(self, document):
+        pass
 
 
-# same for Fax, etc.
-
+# Concrete implementation: A simple printer
 class MyPrinter(Printer):
     def print(self, document):
-        print(document)
+        print(f"Printing: {document}")
 
 
-class Photocopier(Printer, Scanner):
-    def print(self, document):
-        print(document)
-
+# Concrete implementation: A simple scanner
+class MyScanner(Scanner):
     def scan(self, document):
-        pass  # something meaningful
+        print(f"Scanning: {document}")
 
 
-class MultiFunctionDevice(Printer, Scanner):  # , Fax, etc
+# Combined Interface (multi-function device)
+class MultiFunctionDevice(Printer, Scanner):
     @abstractmethod
     def print(self, document):
         pass
@@ -72,8 +38,9 @@ class MultiFunctionDevice(Printer, Scanner):  # , Fax, etc
         pass
 
 
+# Concrete multi-function machine using composition
 class MultiFunctionMachine(MultiFunctionDevice):
-    def __init__(self, printer, scanner):
+    def __init__(self, printer: Printer, scanner: Scanner):
         self.printer = printer
         self.scanner = scanner
 
@@ -84,6 +51,18 @@ class MultiFunctionMachine(MultiFunctionDevice):
         self.scanner.scan(document)
 
 
-printer = OldFashionedPrinter()
-printer.fax(123)  # nothing happens
-printer.scan(123)  # oops!
+# ------------------------
+# ✅ Executing the code
+# ------------------------
+
+if __name__ == "__main__":
+    # Create separate components
+    printer = MyPrinter()
+    scanner = MyScanner()
+
+    # Combine them into a multi-function machine
+    mfd = MultiFunctionMachine(printer, scanner)
+
+    # Use the device
+    mfd.print("ISP_Report.pdf")
+    mfd.scan("ISP_Report.pdf")

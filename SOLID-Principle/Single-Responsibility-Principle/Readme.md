@@ -1,4 +1,4 @@
-# Single Responsibility Principle
+# Single Responsibility Principle (SRP)
 
 - This is also known as **SoC** (Seperation of Concerns).
 - Each module or class should have only one reason to change.

@@ -1,4 +1,4 @@
-# Open - Closed Principle
+# Open - Closed Principle (OCP)
 
 -   The Open-Closed Principle states that a class should be open for extension but closed for modification. <br>
 -   It is introduced by **Bertrand Meyer**. 
@@ -18,8 +18,8 @@ There are few points to OCP: <br>
 -   To achieve this, you can use inheritance and polymorphism. For example, you can create a new class that inherits from the existing class and overrides its methods to add new functionality. <br>
 
 **Note:**
--   BAD CODE : All the functionality like filter_by_color() , filter_by_size() ,filter_by_size_and_color() are present in same file or class.
--   GOOD CODE: Seperate file or classes for each functionality.
+-   BAD CODE : All the functionality like filter_by_color() , filter_by_size() ,filter_by_size_and_color() are fixed for fixed number of features like size and color.
+-   GOOD CODE: Seperate classes for defining each functionality so that open for adding new functionality without any changes or modifications in existing code.
 
 ##  Issues with This Code
 

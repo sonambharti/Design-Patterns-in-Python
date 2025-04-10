@@ -22,7 +22,8 @@ Here, OldFashionedPrinter is forced to implement scan() and fax() even though it
 
 ##  ✅ Refactored: Applying ISP
 Instead of one large interface, we split responsibilities into smaller, specific interfaces. <br>
-Small Interfaces like Printer and Scanners. Then, classes can implement only the interfaces they need, like 
+Create **small Interfaces** like Printer and Scanners. Then, classes can implement only the interfaces they need, like `Printer`, `Scanner`.
+
 
 ### Use Composition Over Inheritance:
 Instead of creating a big class implementing everything, use composition like we did in `MultiFunctionMachine`

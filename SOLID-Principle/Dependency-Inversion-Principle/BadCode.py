@@ -12,14 +12,9 @@ class Person:
     def __init__(self, name):
         self.name = name
 
-
-class RelationshipBrowser:
-    @abstractmethod
-    def find_all_children_of(self, name): pass
-
-
-class Relationships(RelationshipBrowser):  # low-level
-    relations = []
+class Relationships():  # low-level
+    def __init__(self):
+        self.   relations = []
 
     def add_parent_and_child(self, parent, child):
         self.relations.append((parent, Relationship.PARENT, child))
@@ -35,16 +30,12 @@ class Research:
     # dependency on a low-level module directly
     # bad because strongly dependent on e.g. storage type
 
-    # def __init__(self, relationships):
-    #     # high-level: find all of john's children
-    #     relations = relationships.relations
-    #     for r in relations:
-    #         if r[0].name == 'John' and r[1] == Relationship.PARENT:
-    #             print(f'John has a child called {r[2].name}.')
-
-    def __init__(self, browser):
-        for p in browser.find_all_children_of("John"):
-            print(f'John has a child called {p}')
+    def __init__(self, relationships):
+        # high-level: find all of john's children
+        relations = relationships.relations
+        for r in relations:
+            if r[0].name == 'John' and r[1] == Relationship.PARENT:
+                print(f'John has a child called {r[2].name}.')
 
 
 parent = Person('John')

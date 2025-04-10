@@ -6,7 +6,7 @@ The Liskov Substitution Principle (LSP) states that subtypes should be substitut
 ##  Introduction
 
 The Liskov Substitution Principle (LSP) is one of the five SOLID principles of object-oriented design. It states:
-````
+```
 "Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program."
 ```
 This means that a subclass should extend the behavior of its superclass without altering its expected behavior. <br>
